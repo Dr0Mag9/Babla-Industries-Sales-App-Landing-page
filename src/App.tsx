@@ -287,7 +287,7 @@ export default function App() {
                   {/* App Screen Content */}
                   <div className="relative bg-slate-100 h-[600px] rounded-[2.5rem] overflow-hidden flex flex-col items-center justify-center">
                     <img
-                      src="/assets/Babla Group Of Industries .png"
+                      src="/assets/images/app-hero-mockup.png"
                       alt="App Interface Preview"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       onError={(e) => {
@@ -402,15 +402,15 @@ export default function App() {
 
           <div className="flex gap-12 overflow-x-auto pb-12 snap-x snap-mandatory hide-scrollbar">
             {[
-              { id: 1, label: 'Authentication', title: 'Secure Gateway', img: '/assets/Babla Group Of Industries (2).png' },
-              { id: 2, label: 'Dashboard', title: 'Intelligence Hub', img: '/assets/Babla Group Of Industries (3).png' },
-              { id: 3, label: 'Catalog', title: 'Market Access', img: '/assets/Babla Group Of Industries (4).png' },
-              { id: 4, label: 'Logging', title: 'Data Integrity', img: '/assets/Babla Group Of Industries (5).png' }
+              { id: 1, label: 'Authentication', title: 'Secure Gateway' },
+              { id: 2, label: 'Dashboard', title: 'Intelligence Hub' },
+              { id: 3, label: 'Catalog', title: 'Market Access' },
+              { id: 4, label: 'Logging', title: 'Data Integrity' }
             ].map((screen) => (
               <div key={screen.id} className="snap-center shrink-0 w-[300px] group">
                 <div className="aspect-[9/19] bg-[#1a2234] rounded-[3rem] border-[8px] border-[#0a101f] overflow-hidden shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)] relative">
                   <img
-                    src={screen.img}
+                    src={`/assets/images/screenshot${screen.id}.png`}
                     alt={screen.label}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     onError={(e) => {
@@ -668,8 +668,8 @@ export default function App() {
                     Download the comprehensive v1.1.1 operational guidelines for your daily workflows.
                   </p>
                   <a
-                    href="/assets/BABLA GROUP OF  INDUSTRIES - SALES APP.pdf"
-                    download="BABLA GROUP OF INDUSTRIES - SALES APP.pdf"
+                    href="/assets/BablaSalesAppGuide.pdf"
+                    download="BablaSalesAppGuide.pdf"
                     className="block w-full text-center bg-blue-600 text-white font-semibold text-sm py-4 px-8 rounded-xl hover:bg-blue-500 transition-all active:scale-95 shadow-lg"
                   >
                     Download PDF
